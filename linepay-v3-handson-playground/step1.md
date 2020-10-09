@@ -1,4 +1,4 @@
-### 1-1. LINE Payのサンドボックス環境を作成する
+### 1-1. Docker初歩
 下記URLからサンドボックス環境を作成します。
 [https://pay.line.me/jp/developers/techsupport/sandbox/creation?locale=ja_JP](https://pay.line.me/jp/developers/techsupport/sandbox/creation?locale=ja_JP)
 
