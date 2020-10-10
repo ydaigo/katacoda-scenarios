@@ -1,27 +1,20 @@
 ### 1-1. Docker初歩
-下記URLからサンドボックス環境を作成します。
-[https://pay.line.me/jp/developers/techsupport/sandbox/creation?locale=ja_JP](https://pay.line.me/jp/developers/techsupport/sandbox/creation?locale=ja_JP)
 
-メールアドレスを入力して［Submit］ボタンをクリックします。
-![s100](https://raw.githubusercontent.com/gaomar/katacoda-scenarios/master/linepay-v3-handson-playground/images/s100.png)
+# 自己紹介
+- 山本大悟
+- 富山県でSier
+- 最近ボルダリングにはまっている
 
-### 1-2. LINE Pay Homeにログインする
-設定したメールアドレスにログインするためのIDとパスワードが送られてきます。
-`LINE Pay Home` 部分をクリックして、ログインします。
+# 目次
 
-[https://pay.line.me/login/](https://pay.line.me/login/)
+# Dockerとは？
+コンテナ型の仮想環境を作成、配布、実行するためのプラットフォームだ。  
+まずは、実際に動かしてみよう。*1
+1. dockerがインストールされていることを確認する。  
+`docker -v`{{execute T1}}
+2. dockerを使ってWebサーバを立ち上げる。
+`docker run -p 80:80 -d nginx`{{execute T1}}
 
-![s101](https://raw.githubusercontent.com/gaomar/katacoda-scenarios/master/linepay-v3-handson-playground/images/s101.png)
 
-メールに記載されているIDとパスワードでログインします。
-
-![s102](https://raw.githubusercontent.com/gaomar/katacoda-scenarios/master/linepay-v3-handson-playground/images/s102.png)
-
-左側メニューの決済連動管理にある、連動キー管理をクリックして、メールに記載されているパスワードを入力してから、［確認］ボタンをクリックします。
-
-![s103](https://raw.githubusercontent.com/gaomar/katacoda-scenarios/master/linepay-v3-handson-playground/images/s103.png)
-
-### 1-3. IDとSecret Keyをメモする
-`Channel ID` と `Channel Secret Key` の値をそれぞれメモしておきます。
-
-![s104](https://raw.githubusercontent.com/gaomar/katacoda-scenarios/master/linepay-v3-handson-playground/images/s104.png)
+# 参考
+*1 https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/
