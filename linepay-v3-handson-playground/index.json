@@ -1,13 +1,16 @@
 {
-    "title": "LINE Pay v3 ハンズオン",
-    "description": "LINE Pay v3 ハンズオン",
+    "title": "Docker初歩",
+    "description": "Docker初歩",
     "details": {
         "steps": [{
-                "title": "Step 1 - はじめに",
+                "title": "Step 1 - Dockerを動かしてみてる",
                 "text": "step1.md"
             },
             {
-                "title": "Step 2 - プログラムを実行する",
+                "title": "Step 2 - Dockerの仕組みについて",
+                "text": "step2.md"
+            }, {
+                "title": "Step 2 - Docker Composeについて",
                 "text": "step2.md"
             }
         ],
@@ -26,7 +29,7 @@
         "showide": true,
         "ide": "ssh host01 '/opt/start-vscode.sh'",
         "idePort": 23000,
-        "hideintro": true,
+        "hideintro": false,
         "showdashboard": true,
         "terminals": [{ "name": "Terminal 2", "target": "host01" }],
         "uilayout": "terminal"
