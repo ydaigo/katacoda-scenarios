@@ -26,10 +26,12 @@
     },
     "files": [],
     "environment": {
-        "showdashboard": false,
-        "dashboards": [
-            { "name": "Port 80", "port": 80 }
-        ],
+        "showide": true,
+        "ide": "ssh host01 '/opt/start-vscode.sh'",
+        "idePort": 23000,
+        "hideintro": false,
+        "showdashboard": true,
+        "terminals": [{ "name": "Terminal 2", "target": "host01" }],
         "uilayout": "terminal-iframe"
     },
     "backend": {
