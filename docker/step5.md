@@ -1,5 +1,5 @@
 # Dockerを機械学習で使う
-Dockerを用いてjupyter notebookを起動する。*1
+Dockerを用いてjupyter notebookを起動する。*1  
 `docker run -p 80:8888 --rm -it tensorflow/tensorflow:1.15.4-jupyter`{{execute T1}}
 
 

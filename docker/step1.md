@@ -15,8 +15,6 @@
 2. dockerを使ってWebサーバを立ち上げる。  
 `docker run --name test -p 80:80 --rm nginx`{{execute T1}}  
 このように簡単にサーバーを立ち上げることができる。
-コンテナを停止する。
-`docker stop test`{{execute T1}} 
 
 ## Dockerを使うと何がうれしい？*2
 - 開発環境や本番環境を配布しやすい。

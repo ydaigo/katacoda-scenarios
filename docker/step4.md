@@ -1,12 +1,11 @@
-# Docker Composeを使う*1
-
-## Docker Compose とは？
+## Docker Compose とは？*1
 Docker Composeとは複数コンテナのDockerアプリケーションを実行定義するツールである。
 
 ## 実際に使ってみよう！
-wordpressの実行を例に説明する。
+wordpressの実行を例に説明する。  
 docker-compose.yml
 ```
+version: '3'
 services:
 
   wordpress:
@@ -14,7 +13,7 @@ services:
     container_name: some-wordpress
     restart: always
     ports:
-      - 8080:80
+      - 80:80
     environment:
       WORDPRESS_DB_PASSWORD: my-secret-pw
 
@@ -27,14 +26,12 @@ services:
 ```
 
 コンテナをバックグラウンドで起動する
-`docker-compose up -d`{{execute T1}}
-80ポートでWordPressが起動していることの確認
-コマンドライン上で実行されていることの確認
-`docker-compose ps`{{execute T1}}
-
-
-
-
+`docker-compose up -d`{{execute T1}}  
+80ポートでWordPressが起動していることの確認  
+コマンドライン上で実行されていることの確認  
+`docker-compose ps`{{execute T1}}  
+Docker composeを停止する
+`docker-compose stop`{{execute T1}}  
 
 ## 参考
 *1 https://knowledge.sakura.ad.jp/21387/
