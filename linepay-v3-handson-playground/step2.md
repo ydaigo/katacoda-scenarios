@@ -24,7 +24,6 @@
 - Dockerイメージは層状になっている。
 - DockerfileとはDockerイメージを作るための複数の複数のコマンドを記述したもの
 - このコマンド一つ一つがレイヤーとなる。
-  ![](https://i.imgur.com/i836jDP.png)
 ## Dockerfileを使ってイメージを作ってみる
 
 Dockerfile
@@ -60,10 +59,8 @@ print("Hello Docker")
 - 代表的なものに[Docker Hub](https://hub.docker.com/)がある。
 - これを用いるとdocker imageを保存、取得を行うことができる。
 
-まとめるとこのようになる。  
-![](https://docs.docker.com/engine/images/architecture.svg)
 ## 参考
-*1 https://knowledge.sakura.ad.jp/13265/  
-*2 https://docs.docker.com/get-started/overview/  
-*3 https://qiita.com/zembutsu/items/24558f9d0d254e33088f  
-*4 https://docs.docker.com/storage/storagedriver/  
+*1 https://knowledge.sakura.ad.jp/13265/
+*2 https://docs.docker.com/get-started/overview/
+*3 https://qiita.com/zembutsu/items/24558f9d0d254e33088f
+*4 https://docs.docker.com/storage/storagedriver/

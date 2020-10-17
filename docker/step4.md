@@ -25,10 +25,9 @@ services:
       MYSQL_ROOT_PASSWORD: my-secret-pw
 ```
 
-コンテナをバックグラウンドで起動する
+コンテナをバックグラウンドで起動する  
 `docker-compose up -d`{{execute T1}}  
-80ポートでWordPressが起動していることの確認  
-コマンドライン上で実行されていることの確認  
+コマンドライン上で実行されていることの確認    
 `docker-compose ps`{{execute T1}}  
 Docker composeを停止する
 `docker-compose stop`{{execute T1}}  
