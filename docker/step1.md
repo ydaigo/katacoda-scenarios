@@ -1,20 +1,3 @@
-# Docker初歩
-
-## 自己紹介
-- 山本大悟
-- 富山県でSier
-- 最近ボルダリングにはまっている
-
-## このLTの対象
-- Dockerの基礎的な内容を知りたい人
-- Dockerという言葉を聞いたことがあり概要を知りたい人
-
-## このLTの流れ
-1. はじめに
-2. Dockerの仕組み
-3. コマンドの詳しい説明
-4. Docker Compose
-5. 機械学習の環境を作成する
 # はじめに
 ## Katacodaとは？
 - オライリーが作成したソフトウェアの学習プラットフォームである。
@@ -30,8 +13,10 @@
 1. dockerがインストールされていることを確認する。  
 `docker -v`{{execute T1}}
 2. dockerを使ってWebサーバを立ち上げる。  
-`docker run --name test -p 80:80 -d nginx`{{execute T1}}  
+`docker run --name test -p 80:80 --rm nginx`{{execute T1}}  
 このように簡単にサーバーを立ち上げることができる。
+コンテナを停止する。
+`docker stop test`{{execute T1}} 
 
 ## Dockerを使うと何がうれしい？*2
 - 開発環境や本番環境を配布しやすい。

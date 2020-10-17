@@ -10,8 +10,14 @@
                 "title": "Step 2 - Dockerの仕組みについて",
                 "text": "step2.md"
             }, {
-                "title": "Step 2 - Docker Composeについて",
-                "text": "step2.md"
+                "title": "Step 3 - コマンドの詳しい説明",
+                "text": "step3.md"
+            }, {
+                "title": "Step 4 - Docker Composeについて",
+                "text": "step4.md"
+            }, {
+                "title": "Step 5 - 機械学習の環境を作成する",
+                "text": "step5.md"
             }
         ],
         "intro": {
