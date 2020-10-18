@@ -39,6 +39,9 @@ app.py
 print("Hello Docker")
 ```
 
+ビルドする。
+`docker build -t hello .`{{execute T1}}
+
 
 ## Dockerの構成*2
 - DockerはDockerクライアント、Dockerホスト、レジストリの三つで構成されている。

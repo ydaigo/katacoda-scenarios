@@ -12,7 +12,7 @@
     `docker run [OPTIONS] IMAGE [COMMAND] [ARG...]`
 - コマンド例1
 nginxというイメージをもとにコンテナを作成する  
-`docker run --name example1 -publish 80:80 -d nginx`{{execute T1}}
+`docker run --name example1 --publish 80:80 -d nginx`{{execute T1}}
 - オプションの説明
   - --name <コンテナの名前> わかりやすいようにコンテナに名前をつける。
   - --publish <ホスト側ポート>:<コンテナ側ポート> コンテナのportをホストマシンに公開する。
@@ -22,7 +22,7 @@ nginxというイメージをもとにコンテナを作成する
 `docker ps`{{execute T1}}  
 コマンド例2
 対話モードでdockerを起動する。  
-`docker run --name example2 -it -volume /:/ python:3.8 bash`{{execute T1}}
+`docker run --name example2 -it --volume /:/ python:3.8 bash`{{execute T1}}
 - オプションの説明
   - --volume <ホスト側ディレクトリ>:<コンテナ側ディレクトリ>
    ホストのディレクトリをコンテナと強雨うする
